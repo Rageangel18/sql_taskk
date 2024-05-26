@@ -19,6 +19,7 @@ INSERT INTO employees (first_name, last_name, email, encrypted_password) VALUES
    SELECT * FROM employees;
 
 UPDATE employees SET last_name = 'Brown' WHERE email = 'jane.smith@example.com';
+DELETE FROM employees WHERE email = 'john.doe@example.com';
 
 SELECT * FROM pg_stat_statements; -- all the changes at config file have been made. I have added 2 new lines at the end
 --  shared_preload_libraries = 'pg_stat_statements' 
